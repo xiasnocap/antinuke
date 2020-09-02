@@ -10,8 +10,8 @@ bot = commands.Bot(command_prefix='!')
 
 #https://discord.com/developers/applications ,make an app,make a bot,go in OAuth2,select bot,scroll and select admin , then copy the link displayed, paste that into your browser and add it to the server that needs cleaning
 tokentorun = "token"
-channeltodelete = "e"
-roletodelete = "new role"
+channeltodelete = "nuke"
+roletodelete = "get rolespammed"
 #space sensitive
 
 
