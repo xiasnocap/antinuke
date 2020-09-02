@@ -10,8 +10,8 @@ bot = commands.Bot(command_prefix='!')
 
 #https://discord.com/developers/applications ,make an app,make a bot,go in OAuth2,select bot,scroll and select admin , then copy the link displayed, paste that into your browser and add it to the server that needs cleaning
 tokentorun = "token"
-channeltodelete = "nuke"
-roletodelete = "get rolespammed"
+channeltodelete = "nuke" #change to channel name that was mass created
+roletodelete = "get rolespammed"   #change to role name that was mass created
 #space sensitive
 
 
@@ -38,7 +38,8 @@ print(f"""
             ╚═════╝  ╚═════╝    ╚═╝                                   
                                                                                                                  
 
-!channelclean to clean!
+!channelclean or !roleclean to clean!
+
 """)
 
 async def on_ready():
@@ -63,7 +64,7 @@ async def roleclean(ctx):
                     minute = str(currentDT.minute)
                     second = str(currentDT.second)
                     print(f"{Fore.RED}[{Fore.WHITE}{hour}:{minute}:{second}{Fore.RED}]{Fore.GREEN} Deleted Role: {role.name}")
-    print(f"\n\n{Fore.CYAN}Cleared all channels called '{roletodelete}'
+    print(f"\n\n{Fore.CYAN}Cleared all roles called '{roletodelete}'")
 
 
 @bot.command()
